@@ -13,7 +13,7 @@ app.use(logger("dev"));
 app.use(express.static('public')); // html, image static files
 
 app.get('/', (req, res) => {
-    res.sendFile('public/index.html')
+    res.sendFile('index.html')
 })
 
 //curl localhost:3000/user/tommy 
