@@ -4,5 +4,5 @@ WORKDIR /app
 ADD . /app 
 RUN npm i
 
-EXPOSE 8080
+EXPOSE 3000
 CMD ["node", "app.js"]
