@@ -1,7 +1,8 @@
 FROM node:25.2.1-slim
+
 WORKDIR /app
-COPY package.json ./
-RUN npm install
-COPY . .
-EXPOSE 3000
+ADD . /app 
+RUN npm i
+
+EXPOSE 8080
 CMD ["node", "app.js"]
