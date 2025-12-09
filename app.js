@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 
+
 //curl localhost:3000/user/tommy 
 app.get('/user/:id', (req, res) => {
     res.send(`User id is ${req.params.id}`);
